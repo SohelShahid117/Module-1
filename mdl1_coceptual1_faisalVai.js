@@ -47,6 +47,11 @@ console.log("i love bangladesh");
 console.log("I am Sohel Shahid");
 console.log("I love my Maaaaaaaaaaaaaaaaaaaaaaaa");
 
+let stdNm = "Shahid";
+console.log(stdNm);
+
+
+
 
 
 
