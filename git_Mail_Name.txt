@@ -1,0 +1,107 @@
+User@DESKTOP-M1HN5IR MINGW64 ~
+$ cd H:
+
+User@DESKTOP-M1HN5IR MINGW64 /h
+$ cd prgrm
+
+User@DESKTOP-M1HN5IR MINGW64 /h/prgrm
+$ cd ostad
+
+User@DESKTOP-M1HN5IR MINGW64 /h/prgrm/ostad
+$ cd module-1
+
+User@DESKTOP-M1HN5IR MINGW64 /h/prgrm/ostad/module-1 (main)
+$ git init
+Reinitialized existing Git repository in H:/prgrm/Ostad/Module-1/.git/
+
+User@DESKTOP-M1HN5IR MINGW64 /h/prgrm/ostad/module-1 (main)
+$ git add Test.txt
+fatal: pathspec 'Test.txt' did not match any files
+
+User@DESKTOP-M1HN5IR MINGW64 /h/prgrm/ostad/module-1 (main)
+$ git add Test.tst
+fatal: pathspec 'Test.tst' did not match any files
+
+User@DESKTOP-M1HN5IR MINGW64 /h/prgrm/ostad/module-1 (main)
+$ git add Test.txt
+
+User@DESKTOP-M1HN5IR MINGW64 /h/prgrm/ostad/module-1 (main)
+$ git commit -m "first commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'User@DESKTOP-M1HN5IR.(none)')
+
+User@DESKTOP-M1HN5IR MINGW64 /h/prgrm/ostad/module-1 (main)
+$ git config --global user.email "sohelshahid09@gmail.com"
+
+User@DESKTOP-M1HN5IR MINGW64 /h/prgrm/ostad/module-1 (main)
+$ git config --global user.name "SohelShahid117"
+
+User@DESKTOP-M1HN5IR MINGW64 /h/prgrm/ostad/module-1 (main)
+$ git congig --list
+git: 'congig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+User@DESKTOP-M1HN5IR MINGW64 /h/prgrm/ostad/module-1 (main)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+safe.directory=H:/prgrm/Ostad/Module-1
+user.email=sohelshahid09@gmail.com
+user.name=SohelShahid117
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+
+User@DESKTOP-M1HN5IR MINGW64 /h/prgrm/ostad/module-1 (main)
+$ git commit -m "first commit"
+[main (root-commit) c5e849c] first commit
+ 14 files changed, 63439 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 Test.txt
+ create mode 100644 mdL1_cls2_rabbilVai.html
+ create mode 100644 mdL1_suprting_cls.html
+ create mode 100644 mdL_1_preVdo.html
+ create mode 100644 mdl1_cls1_rabbilVai.html
+ create mode 100644 mdl1_coceptual1_faisalVai.html
+ create mode 100644 mdl1_coceptual1_faisalVai.js
+ create mode 100644 mdl1_coceptual2_faisalVai.html
+ create mode 100644 mdl1_resourse1.html
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 resourse/JavaScript Foundation.pdf
+ create mode 100644 resourse/faisal vai note.txt
+
+User@DESKTOP-M1HN5IR MINGW64 /h/prgrm/ostad/module-1 (main)
+$ git reflog
+c5e849c (HEAD -> main) HEAD@{0}: commit (initial): first commit
+
+User@DESKTOP-M1HN5IR MINGW64 /h/prgrm/ostad/module-1 (main)
+$
