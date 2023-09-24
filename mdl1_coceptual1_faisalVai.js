@@ -35,7 +35,7 @@ console.log(z3);
 //1:02 min teke soro hbe
 
 //.gitignore die 1t file banabo
-//git remote -v
+//git remote -v------ata amar git link dibe
 
 let name1 = "Sohel";
 //console.log(name);
@@ -45,6 +45,7 @@ console.log(a);
 console.log(name1);
 console.log("i love bangladesh");
 console.log("I am Sohel Shahid");
+console.log("I love my Maaaaaaaaaaaaaaaaaaaaaaaa");
 
 
 
