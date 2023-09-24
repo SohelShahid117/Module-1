@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resourse1_module1</title>
+</head>
+<body>
+    
+    <script>
+        document.write("hello JS" + "<br>");
+        //single line comment
+        
+        /*this is multi line
+        comment */
+
+        var x = 10;
+        var y = 20;
+        var z = x+y;
+        document.write(z + "<br>");
+
+        //js variable are case sensitive
+
+        var age = 20;
+        if(age>18){
+            document.write("you are adult" + "<br>");
+        }
+
+        var age2 = 10;
+        if(age2>18){
+            document.write("you are adult" + "<br>");
+        }else{
+            document.write("you are child" + "<br>");
+        }
+
+        var a = 15;
+        if(a==10){
+            document.write("value of a is 10 " + "<br>");
+        }else if(a==15){
+            document.write("value of a is 15 " + "<br>");
+        }else if(a==20){
+            document.write("value of a is 20 " + "<br>");
+        }else{
+            document.write("value of a is not equal to 10,15, 20 " + "<br>");
+        }
+
+
+        let fruits = "Banana"
+        switch(fruits) {
+            case "Banana":
+                alert("Hello")
+            break;
+            case "Apple":
+                alert("Welcome")
+            break;    
+        }
+
+
+        let grade = "C";
+  
+            switch (grade) {
+
+                case "A+":
+                document.write("Result is A+" +"<br>");
+                break;
+
+                case "A":
+                document.write("Result is A" +"<br>");
+                //"Result is A";
+                break;
+
+                case "A-":
+                document.write("Result is A-" +"<br>");
+                break;
+
+                case "B":
+                document.write("Result is B" +"<br>");
+                break;
+
+                case "C":
+                document.write("Result is C" +"<br>");
+                break;
+
+                case "D":
+                document.write("Result is D" +"<br>");
+                break;
+
+                default:
+                document.write("No result.You are fail" +"<br>");
+            }
+
+            document.write("Now start for loop " + "<br>");
+          
+            for(i=1;i<5;i++){
+                document.write(i +"<br>");
+            }
+
+            document.write("Now start while loop " + "<br>");
+
+            let j = 7;
+            while(j<10){
+                document.write(j +"<br>");
+                j++;
+            }
+
+            document.write("Now start do while loop " + "<br>");
+
+            let b = 1;
+            do{
+                document.write(b + "<br>");
+                b++;
+            }
+            while(b<7);
+
+            function msg(){
+                alert("hello! this is a message")
+            }
+            msg();
+
+            function addTwoNumb(){
+                let x=5;
+                let y = 20;
+                let z = x + y;
+                return z;
+            }
+            let F = addTwoNumb();
+
+            document.write("sum of x & y = " + F + "<br>");
+
+
+            var student = {
+                name : "Sohel",
+                age : 32,
+                university :"CUET",
+                dept:"EEE"
+            }
+
+            document.write("my name is " + student.name + "<br>");
+
+            var city = ["ctg","dhaka","rajshahi"];
+            for(i=0;i<city.length;i++){
+                document.write(city[i] + "<br>");
+            }
+
+            var arr1 = ["A","B","C"];
+            var arr2 = ["D","E","F"];
+            var arr3 = arr1 + arr2;
+            var arr4 = arr2.concat(arr1);
+
+            document.write(" + concatination is arr3    " + arr3 + "<br>");
+            document.write(" concat method is  " + arr4 + "<br>");
+
+            var nameArry = Array.from("MD SAHIDUL ISLAM SHOHEL");
+            document.write("array from my name is " + nameArry + "<br>");
+
+            let sumi = "FARZANA SUMI";
+            let sumisArr = Array.from(sumi);
+            document.write("array from Sumis name is " + sumisArr + "<br>");
+
+            //array filter
+            let marks = ["20","30","40","11","55","25","60","28"];
+            document.write("mark of array is  " + marks + "<br>");
+    
+            /*
+            let filtringArr =  marks.filter(chkd);
+            function chkd(value){
+                return value > 20;
+            }
+            */
+
+            let filtringArr =  marks.filter(y => y > 20);
+            document.write("filtering array is  " + filtringArr + "<br>");
+
+            //array finding
+            let findingMarks = marks.find(x => x > 20);
+            document.write("finding array is  " + findingMarks + "<br>");
+
+            let findIndxMarks = marks.findIndex(x => x > 20);
+            document.write("finding array is  " + findIndxMarks + "<br>");
+
+            var nmbrrr = [10,20,11,23,16,24];
+            /*
+            nmbrrr.forEach(x){
+                document.write(x + "<br>");
+            }; */
+
+            document.write("use forEach() method using arrow function" + "<br>");
+
+            nmbrrr.forEach((x)=>{
+                document.write(x + "<br>");
+            });
+
+            document.write("use forEach() method using function key" + "<br>");
+
+            nmbrrr.forEach(function(x){
+                document.write(x + "<br>");
+            });
+
+            var nmbr2 = nmbrrr.includes(40,50);
+            document.write("this nmbr is included ?  " + nmbr2 +  "<br>");
+
+            var nmbr3 = nmbrrr.includes(10);
+            document.write(" includes method reply True/False coz this nmbr or string is included or not : " + nmbr3 + "<br>");
+
+            var nmbr4 = nmbrrr.indexOf(23);
+            document.write("index of 23 is " + nmbr4 + "<br>");
+
+            var mrkkk = [10,20,30,40,50]
+            document.write(mrkkk + "<br>");
+            document.write(mrkkk.pop() + "<br>");
+            document.write(mrkkk + "<br>");
+
+            document.write(mrkkk.push(99) + "<br>");
+
+            mrkkk.push(77);
+            document.write(mrkkk + "<br>");
+
+            mrkkk.reverse();
+            document.write(mrkkk + "<br>");
+
+            var mrkkk2 = mrkkk.slice(1,4);
+            document.write(mrkkk2 + "<br>");
+            document.write(mrkkk + "<br>");
+
+            var mrkkk3 = mrkkk.sort();
+            document.write(mrkkk3 + "<br>");
+            document.write(mrkkk + "<br>");
+
+            var grade2 = ["A","B","C","D","E","F"];
+            var grd3 = grade2.slice(1,4);
+            document.write(grade2 + "<br>");
+            document.write(grd3 + "<br>");
+       
+            const fruits2 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+            const citrus = fruits2.slice(2);
+            document.write(fruits2 + "<br>" + citrus + "<br>");
+
+            //JAVASCRIPT STRING METHODS
+            var str="JStpoint";
+            document.write(str.charAt(4) + "<br>");
+
+            var x3="Javatpoint";
+            var y3=".com";
+            document.writeln(x3.concat(y3)+ "<br>");
+
+            var web="Learn JavaScript on Javatpoint";
+            document.write(web.indexOf('a')+ "<br>");
+
+            var web="Learn JavaScript on Javatpoint";
+            document.write(web.lastIndexOf('a')+ "<br>");
+
+            var str2="Javatpoint";
+            document.writeln(str2.replace("tpoint","Script")+ "<br>");
+
+            var str3=" Learn Node.js on Javatpoint. Node.js is a well-known JavaScript framework.";
+            document.writeln(str3.replace(/Node.js/g,"AngularJS")+ "<br>");
+
+            var str4=" Learn Node.js on Javatpoint. Node.js is a well-known JavaScript framework.";
+            document.writeln(str4.replace(/Node.js/,"AngularJS")+ "<br>"); //It will replace only first match.
+
+            var str5=" Learn Node.js on Javatpoint. Node.js is a well-known JavaScript framework.";
+            document.writeln(str5.replace(/Node.JS/g,"AngularJS")+ "<br>"); //replace() method is case-sensitive.
+
+            var str6=" Learn Node.js on Javatpoint. Node.js is a well-known JavaScript framework.";
+            document.writeln(str6.replace(/Node.JS/gi,"AngularJS")+ "<br>");//ignore case sensitive
+
+            //string.substr(start,length)  
+            var str7="Javatpoint";
+            document.writeln(str7.substr(5,5)+ "<br>");
+
+            document.writeln(str7.substr(2,8)+ "<br>");
+
+            document.writeln(str7.substr(5)+ "<br>");
+
+            document.writeln(str7.substr()+ "<br>");
+
+            //negative nmbr starts fetching from the end of the string.
+            document.writeln(str7.substr(-5,5));
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "module-1",
+  "version": "1.0.0",
+  "description": "this is my first javascript project",
+  "main": "mdl1_coceptual1_faisalVai.js",
+  "scripts": {
+    "start-dev": "nodemon appnm.js"
+  },
+  "keywords": [],
+  "author": "Sohel Shahid",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module-1-Cls-1-JS variable,data type,if-else,switch case,loop</title>
+</head>
+<body>
+
+    <!-- 47 min teke soro hbe -->
+    <script>
+        console.log("hello world from javascript");
+        debugger;
+
+        document.write("2+2"+ "<br>")   ;
+        debugger;
+
+        document.write(2+2 + "<br>");
+        debugger
+
+        let x = 5;
+        let y = 7;
+        let z = x+y;
+        document.write(z + "<br>");
+
+        // 1:02 min teke soro hbe
+
+        const a = 5;
+        const b = 20;
+        document.write(a+b + "<br>");
+
+        let firstName = "Sohel";  //string
+        let lastName = "Shahid"; //string
+        let age = 30; //nmbr
+        let isBangaladeshi = true; //boolean
+        let fullName = firstName + lastName; //string
+        let city;//undefined
+        let country = null;//null or object
+
+        document.write(fullName +  "<br>" + typeof(age)+ "<br>" + typeof(isBangaladeshi)+"<br>" + typeof(fullName)+ "<br>");
+        
+        document.write(typeof(city)+  "<br>" + typeof(country)+ "<br>");
+        //know about primitive data type vs Non primitive data type
+
+        //primitive data type:string,boolean,number,undefined,null
+        //nonprimitive data type:object,array,regularExp
+
+        let marks = 98;
+        if(marks>=80 ){
+            document.write("your result is <b>A+<b>" + "<br>");
+        }
+        else if(marks>=70 && marks<80){
+            document.write("your result is <b>A<b>" + "<br>");
+        }
+        else if(marks>=60 && marks<70){
+            document.write("your result is <b>A-<b>"+ "<br>");
+        }
+
+        else if(marks>=50 && marks<60){
+            document.write("your result is <b>B<b>" + "<br>");
+        }
+
+        else if(marks>=40 && marks<50){
+            document.write("your result is <b>C<b>" + "<br>");
+        }
+
+        else if(marks>=33 && marks<40){
+            document.write("your result is <b>D<b>" + "<br>");
+        }
+
+        else{
+            document.write("your result is <b>F<b>" + "<br>");
+        }
+
+        // 1:20 min teke soro hbe
+
+        for(let i = 0; i<=5;i++){
+            document.write(i + "<br>" );
+        }
+        document.write( "<br>");
+
+        let j=10;
+        while(j<=15){
+            document.write(j + "<br>" );
+            j++;
+        }
+        document.write( "<br>");
+
+        let k=20;
+        do{
+            document.write(k + "<br>" );
+            k++;
+        }while(k<30);
+        document.write( "<br>");
+
+        //API:Application programming interface
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module-1-Cls-2-JS function,array,string</title>
+</head>
+<body>
+    <script>
+
+       /* function:
+            1.function write()
+            2.function  naming convention();
+            3.function signature()
+            4.regular function()
+            5.arrow function()
+            6.async function()----await
+            7.function parameter()
+            8.function rest parameter()
+            9.function return()
+            10.IIF function()
+            11.IIF function async() */
+
+        
+        //traditional function
+        function onLogin(){
+            document.write("login successs!" + "<br>");
+        }
+        onLogin();
+
+        function onSum(){
+            let x = 5;
+            let y = 10;
+            document.write(x+y + "<br>");
+        }
+        onSum();
+
+        onSub=()=>{
+            let x = 5;
+            let y = 10;
+            document.write(x-y + "<br>");
+        }
+        onSub();
+
+        async function onLoginnnnnnn(){
+            document.write("Loginnnnnnn successs!" + "<br>");
+        }
+      
+
+        onSignup=async()=>{
+            document.write("Signup complete!" + "<br>");
+        }
+
+        onSignup();
+        onLoginnnnnnn();
+
+
+        async function fun1(){
+           await fetch('https://dummyjson.com/products/1');
+        }
+        //fetch - er kaj holo JS die kono url k call kora-just rest API call kora
+      
+
+        fun2=async()=>{
+           await fetch('https://dummyjson.com/products/2');
+        }
+
+        fun2();
+        fun1();
+
+        // 50 min teke soro hbe
+
+        function addTwo(){
+            let x = 10;
+            let y = 33;
+            document.write(x+y +"<br>");
+        }
+        addTwo();
+
+        function addThree(x,y,z){
+            document.write(x+y+z +"<br>");
+        }
+        addThree(5,6,7);
+
+        function restParameterSum(...a){
+            document.write(a +"<br>");
+            document.write(...+a +"<br>");
+        }
+        restParameterSum(1,2,3,4,6,8,2,3,5);
+
+
+        function add(...a) {
+          let sum = 0;
+          for (let b of a){           //a er value sob arrayr moto kaj korse
+               sum = sum + b;
+            }
+            return sum;
+        }
+        let x = add(4, 9, 16, 25, 29, 100, 66, 77);
+        document.write(x +"<br>");
+
+        function marks(writen,viva){
+            return writen + viva;
+        }
+        let assignments = 5;
+        let total = marks(70,20)+assignments;
+        document.write(total +"<br>");
+
+        //1:12 teke soro hbe
+
+        //IIF-Immediate Invoked Function
+
+        (()=>{
+            document.write("I am IIF" +"<br>");
+
+        })();
+
+        
+        ( async ()=>{
+            document.write("I am async IIF" +"<br>");
+
+        })();
+
+        ((...a)=>{
+            document.write("sum of a[0] to a[8] :" + a[0]+a[1]+a[2]+a[3]+a[4]+a[5]+a[6]+a[7]+a[8] +"<br>");
+            document.write("all values are in string type due to sorotei ami string add kore disi :" + a[0]+a[1]+a[2]+a[3]+a[4]+a[5]+a[6]+a[7]+a[8] +"<br>");
+            document.write(a[0]+a[1]+a[2]+a[3]+a[4]+a[5]+a[6]+a[7]+a[8] +"<br>");
+        })(1,2,3,4,5,6,7,8,9)
+
+
+        let addd = ((...b)=>{
+            let sum = 0;
+            for(let c of b){
+                //sum = sum + c;
+                sum += c;
+            }
+            return sum;
+        }
+        )(1,2,3,4,5,6,7,8,9);
+        document.write("using IIF sum of a[0] to a[8]  :" + addd +"<br>");
+
+        function add(...a) {
+          let sum = 0;
+          for (let b of a){           //a er value sob arrayr moto kaj korse
+               sum = sum + b;
+            }
+            return sum;
+        }
+        let x2 = add(4, 9, 16, 25, 29, 100, 66, 77);
+        document.write(x2 +"<br>");
+
+        function addFour(...a){
+            document.write(a[0]+a[1]+a[2]+a[3] +"<br>");
+        }
+        addFour(44,55,44,33,22,11,77,88,99);
+
+        ((...a)=>{
+            document.write(a[0]+a[1]+a[2]+a[3] +"<br>");
+        })(44,55,44,33,22,11,77,88,99);
+
+ 
+
+    </script>
+    
+</body>
+</html>
