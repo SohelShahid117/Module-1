@@ -50,14 +50,62 @@ console.log("I love my Maaaaaaaaaaaaaaaaaaaaaaaa");
 let stdNm = "Shahid";
 console.log(stdNm);
 
+const instituteName = "Ostad";
+console.log(instituteName);
+
+//= is assignment opeartor;
+//== loose equality
+//=== strict equality
 
 
+//data type
 
+let stdAge = 32;
+let isAdult = true;
+console.log(typeof(isAdult));
+console.log(typeof(stdAge));
+console.log(typeof(stdNm));
 
+//template literal or string literal
+let income = 1000;
+let expense = 500;
+let information = `I am studying in ${instituteName}.My Name is ${stdNm}.My net 
+    income = ${income}-${expense}==${income-expense}.I love ❤ my mother❤❤❤🥰🥰🥰.`;
+console.log(information);
 
+let fruits = ["Banana","Apple","Orange","Mango"];
+console.log(fruits);
+let nmbrs = [50,55,98,56,23,78];
+console.log(nmbrs[3]);
+console.log(fruits[fruits.length]);
+console.log(fruits[fruits.length-1]);
 
+//47 min teke sor hbe
 
+fruits[3] = "Jambura";
+console.log(fruits);
 
-
-
+let person = {
+    fistName : "Sohel",
+    lastName : "Shahid",
+    age : 32,
+    isAdultyyy : true,
+    isStudent : true,
+    address : {
+        road : 3,
+        houseNo : "114A",
+        city :"Chattogram",
+        country: "Bangladesh"
+    },
+    education : {
+        Bsc : 2017,
+        Hsc : 2009,
+        Ssc : 2007,
+        institute : ["CUET","Rangunia College","Uttar Pomra High School"]
+    },
+    fullName : this.fistName + this.lastName
+    //51 min teke soro hbe
+}
+console.log(person[fullName]);
+console.log(person.age);
 

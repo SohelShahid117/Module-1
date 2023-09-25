@@ -4,7 +4,7 @@
   "description": "this is my first javascript project",
   "main": "mdl1_coceptual1_faisalVai.js",
   "scripts": {
-    "start-dev": "nodemon appnm.js"
+    "start-dev": "nodemon mdl1_coceptual1_faisalVai.js"
   },
   "keywords": [],
   "author": "Sohel Shahid",
