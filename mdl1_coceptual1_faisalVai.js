@@ -109,3 +109,4 @@ let person = {
 console.log(person[fullName]);
 console.log(person.age);
 
+
